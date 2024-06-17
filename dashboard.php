@@ -1,4 +1,4 @@
-<?php
+w<?php
 include 'config.php';
 session_start();
 
@@ -174,7 +174,7 @@ $appointments = $conn->query("SELECT appointments.id, doctors.name AS doctor_nam
     }
     </style>
     <!-- NAVBAR -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Hospital</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -205,7 +205,7 @@ $appointments = $conn->query("SELECT appointments.id, doctors.name AS doctor_nam
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="social-icon" href="#contact"><i class="ri-contacts-book-3-line"></i></a>
+                        <a class="social-icon" href="#about.php"><i class="ri-contacts-book-3-line"></i></a>
                     </li>
                 </ul>
             </div>
