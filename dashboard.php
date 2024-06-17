@@ -1,4 +1,4 @@
-w<?php
+<?php
 include 'config.php';
 session_start();
 
