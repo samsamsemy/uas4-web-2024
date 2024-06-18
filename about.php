@@ -49,7 +49,6 @@ $conn->close();
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hospital</title>
-    <!-- <link rel="stylesheet" href="assets/css-bootstrap/bootstrap.css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
@@ -210,29 +209,28 @@ $conn->close();
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#dasboard">Dashboard</a>
+                            <a class="nav-link" href="dashboard.php">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#add_doctors.php">Doctor</a>
+                            <a class="nav-link" href="add_doctors.php">Doctor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#add_patients">Patient</a>
+                            <a class="nav-link" href="add_patients.php">Patient</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#add_appointments">Appointment</a>
+                            <a class="nav-link" href="add_appointments.php">Appointment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about.php">About</a>
+                            <a class="nav-link" href="about.php">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#doctor_list.php">Doctor Profile</a>
+                            <a class="nav-link" href="doctors_list.php">Doctor Profile</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="social-icon" href="#contact"><i class="ri-contacts-book-3-line"></i></a>
+                            <a class="social-icon" href="contact.php"><i class="ri-contacts-book-3-line"></i></a>
                         </li>
                     </ul>
                 </div>
