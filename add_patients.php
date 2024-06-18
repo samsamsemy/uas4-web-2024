@@ -27,21 +27,20 @@ $conn->close();
   <body>
     <div class="center">
       <h1>Add New Patient</h1>
-      <form method="post">
+      <form method="post" action="">
         <div class="txt_field">
-          <input type="text" required />
+          <input type="text" name="name" required />
           <span></span>
           <label>Name</label>
         </div>
         <div class="txt_field">
-          <input type="password" required />
+          <input type="email" name="email" required />
           <span></span>
           <label>Email</label>
         </div>
-        <input type="submit" value="Login" />
+        <input type="submit" value="Add Patient" />
         <div class="bottom-form"></div>
       </form>
     </div>
   </body>
 </html>
-
