@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap end -->
+    <!-- icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- icon end -->
+    <title>Vitamin</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+      /* variabel */
+      :root {
+        --c-brand: #0c8cdc;
+        --c-brand-rgb: 254, 54, 145;
+        --c-dark: #044269;
+        --c-body: #7aa5c2;
+        --f-main: "Nunito Sans", sans-serif;
+        --transition: 0.2s ease-in-out;
+        --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Reset and Helpers */
+      body {
+        font-family: var(--f-main);
+        color: var(--c-body);
+        line-height: 1.7;
+        background-color: white;
+      }
+
+      h1,
+      .h1,
+      h2,
+      .h2,
+      h3,
+      .h3,
+      h4,
+      .h4,
+      h5,
+      .h5,
+      h6,
+      .h6 {
+        font-weight: 700;
+        color: var(--c-dark);
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--c-dark);
+        transition: var(--transition);
+      }
+
+      a:hover {
+        color: var(--c-brand);
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .section-padding {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+
+      .text-brand {
+        color: var(--c-brand);
+      }
+
+      /* Navbar */
+      .navbar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        transition: var(--transition);
+      }
+
+      .navbar.scrolled {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: white;
+      }
+
+      @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: 16px;
+          padding-left: 16px;
+        }
+      }
+
+      .navbar .navbar-nav .nav-link {
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--c-dark);
+      }
+
+      .navbar .navbar-nav .nav-link:hover {
+        color: var(--c-brand);
+      }
+
+      .navbar-brand {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--c-dark);
+      }
+
+      .social-icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 6px;
+        background-color: var(--c-brand);
+        color: white;
+        border: 2px solid var(--c-brand);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-icon:hover {
+        background-color: white;
+      }
+
+      /* btn */
+      .btn {
+        padding: 10px 24px;
+        border-radius: 0;
+        border-width: 2px;
+        font-weight: 500;
+      }
+
+      .btn-brand {
+        background-color: var(--c-brand);
+        color: white;
+        border-color: var(--c-brand);
+      }
+
+      .btn-brand:hover {
+        border-color: var(--c-brand);
+      }
+
+      .btn-brand:focus {
+        background-color: var(--c-brand);
+      }
+
+      /* slider */
+      .slider-katalog {
+        display: flex;
+        overflow-x: auto; /* Untuk membuatnya dapat digulir */
+        scrollbar-width: none; /* Untuk menyembunyikan scrollbar pada browser */
+        -ms-overflow-style: none; /* Untuk menyembunyikan scrollbar pada Internet Explorer */
+      }
+
+      .slider-katalog::-webkit-scrollbar {
+        display: none; /* Untuk menyembunyikan scrollbar pada browser WebKit */
+      }
+
+      /* home */
+      #Home {
+        /* background-image: url(ppp.png); */
+        background-position: center;
+        background-size: cover;
+      }
+
+      /* konten 1 */
+      .content-1 {
+        padding: 50px;
+        /* background-color: wheat; */
+      }
+
+      /* footer */
+      footer {
+        /* background-color: var(--c-brand); */
+      }
+    </style>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hospital</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dasboard.php">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#add_doctors.php">Doctor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#add_patients.php">Patient</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#add_appointments.php">Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about.php">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#doctor_list.php">Doctor Profile</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="social-icon" href="#contact"
+                ><i class="ri-contacts-book-3-line"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- head -->
+    <section id="Home" class="d-flex align-items-center min-vh-100">
+      <div class="container">
+        <div class="col-sm text-center">
+          <h1 class="display-2 fw-bold">
+            Selamat datang di<span class="text-brand"> Hostpital</span>
+          </h1>
+          <h4 class="mt-3 mb-5">
+            Atur jadwal dan keperluan mu dengan dokter yang tersedia dimanapun
+          </h4>
+        </div>
+      </div>
+    </section>
+    <!-- head END -->
+
+    <!-- content -->
+    <div class="container">
+      <!-- isi -->
+      <h2 class="display-4 fw-bold">Manfaat Penting Vitamin untuk Kesehatan dan Kesejahteraan Tubuh</h2>
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 fs-5">
+            Kata kunci :
+          </div>
+          <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 fs-5">
+            Vitamin
+          </div>
+          <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 fs-5">
+            Kesehatan
+          </div>
+          <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 fs-5">
+            Nutrisi
+          </div>
+          <div class="col-6 col-sm-2 col-md-2 col-lg-1 p-0 fs-5">
+            Suplemen
+          </div>
+        </div>
+      </div>
+      <p class="fs-5">
+        Vitamin merupakan senyawa organik esensial yang dibutuhkan tubuh dalam jumlah kecil tetapi memiliki peran vital dalam menjaga kesehatan dan fungsi tubuh. Setiap vitamin memiliki fungsi unik dan penting dalam berbagai proses biologis. Misalnya, vitamin A penting untuk kesehatan mata dan sistem imun, vitamin C berperan dalam pembentukan kolagen dan meningkatkan daya tahan tubuh, sementara vitamin D membantu penyerapan kalsium dan menjaga kesehatan tulang. 
+        <br /><br />
+        Sumber vitamin bervariasi dan bisa didapatkan dari berbagai jenis makanan. Sayuran hijau, buah-buahan, kacang-kacangan, biji-bijian, dan produk hewani semuanya mengandung berbagai vitamin yang diperlukan tubuh. Vitamin A, misalnya, banyak ditemukan dalam wortel, ubi jalar, dan bayam. Vitamin C bisa didapatkan dari jeruk, stroberi, dan brokoli, sementara vitamin D biasanya terdapat dalam ikan berlemak, telur, dan produk susu yang diperkaya. Penting untuk mengonsumsi diet seimbang untuk memastikan tubuh mendapatkan semua jenis vitamin yang dibutuhkannya.
+        <br /><br />
+        <div class="d-flex justify-content-center">
+            <img
+              src="./assets/vitamin.jpeg"
+              style="width: 50%; height: 50%"
+              alt=""
+            />
+        </div>
+        <div class="container text-center">
+            <a href="https://id.pinterest.com/pin/1097611740421147504/" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">sumber</a>
+        </div>
+        <br /><br />
+        <span class="fs-5">Kekurangan vitamin dapat menyebabkan berbagai masalah kesehatan. Misalnya, kekurangan vitamin A dapat menyebabkan masalah penglihatan dan meningkatkan risiko infeksi. Kurangnya vitamin C dapat menyebabkan skorbut, yang ditandai dengan gusi berdarah dan kelelahan, sedangkan kekurangan vitamin D dapat menyebabkan osteomalasia atau rakhitis, yang mengakibatkan tulang menjadi lunak dan rapuh. Oleh karena itu, penting untuk memantau asupan vitamin dan memastikan bahwa diet harian mencakup berbagai sumber vitamin.</span>
+        <br /><br />
+        <span class="fs-5">Namun, kelebihan vitamin juga bisa berdampak buruk. Vitamin yang larut dalam lemak, seperti vitamin A, D, E, dan K, dapat menumpuk dalam tubuh dan menyebabkan toksisitas jika dikonsumsi dalam jumlah berlebihan. Misalnya, kelebihan vitamin A dapat menyebabkan keracunan yang ditandai dengan gejala seperti sakit kepala, mual, dan bahkan kerusakan hati. Oleh karena itu, meskipun suplemen vitamin bisa bermanfaat dalam beberapa kasus, penggunaannya harus dilakukan dengan hati-hati dan sesuai anjuran dokter.</span>
+        <br /><br />
+        <span class="fs-5">Dengan memahami peran dan sumber vitamin, serta dampak kekurangan dan kelebihan asupannya, kita dapat lebih bijaksana dalam menjaga pola makan yang seimbang dan sehat. Artikel ini bertujuan untuk memberikan panduan komprehensif tentang bagaimana vitamin dapat mendukung kesehatan optimal dan kesejahteraan secara keseluruhan. Dengan demikian, kita dapat membuat keputusan yang lebih baik untuk mendukung kesehatan tubuh kita melalui asupan nutrisi yang tepat.</span>
+      </p>
+      <!-- isi end -->
+
+      <!-- tanya dokter -->
+      <div class="d-flex mb-3">
+        <div class="me-auto">
+            <h1>Masih bingung dengan topik ini?</h1>
+            <p class="fs-5">Segera diskusikan dengan <span class="text-brand fw-bold fs-4">Dokter ahli</span> dalam bidang nya</p>
+        </div>
+        <div class="p-2">
+            <a href="#add_appointments.php" class="btn btn-brand">Daftar disini!</a>
+        </div>
+      </div>
+      <!-- tanya dokter end -->
+
+      <!-- content end -->
+    </div>
+
+    <footer class="text-center my-3">
+      <h6>&copy kelompok web UPNVJ 2024</h6>
+    </footer>
+  </body>
+</html>
