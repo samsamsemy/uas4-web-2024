@@ -181,31 +181,30 @@ $appointments = $conn->query("SELECT appointments.id, doctors.name AS doctor_nam
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#dasboard">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#add_doctors.php">Doctor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#add_patients">Patient</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#add_appointments">Appointment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about.php">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#doctor_list.php">Doctor Profile</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="social-icon" href="#about.php"><i class="ri-contacts-book-3-line"></i></a>
+             <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.php">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add_doctors.php">Doctor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add_patients.php">Patient</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add_appointments.php">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.php">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors_list.php">Doctor Profile</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="social-icon" href="contact.php"><i class="ri-contacts-book-3-line"></i></a>
                     </li>
                 </ul>
             </div>
