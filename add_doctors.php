@@ -28,18 +28,18 @@ $conn->close();
   <body>
     <div class="center">
       <h1>Add New Doctor</h1>
-      <form method="post">
+      <form method="post" action="">
         <div class="txt_field">
-          <input type="text" required />
+          <input type="text" name="name" required />
           <span></span>
           <label>Name</label>
         </div>
         <div class="txt_field">
-          <input type="password" required />
+          <input type="text" name="specialization" required />
           <span></span>
           <label>Specialization</label>
         </div>
-        <input type="submit" value="Login" />
+        <input type="submit" value="Add Doctor" />
         <div class="bottom-form"></div>
       </form>
     </div>
